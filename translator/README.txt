@@ -1,0 +1,1 @@
+Yuqoridagi .PY fayllarni ocha olmasangiz, .TXT fayllarni oching.
