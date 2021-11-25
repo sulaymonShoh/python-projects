@@ -36,16 +36,6 @@ def count(base, digit, repeat):
 
 	print(f' - {COUNT_OF_NUMBERS} ta son generatsiya qilish mumkin.')
 
-# def generate_numbers(base_list, list, length):
-# 	n = sample(base_list, digits)
-# 	addition = ''
-# 	for i in n:
-# 		addition += str(i)
-# 	if length != len(list):
-# 		if not (int(addition) in list):
-# 			list.append(int(addition))
-# 			# print(list)
-# 		generate_numbers(base_list, list, length)
 
 def generate(base, digit):
 	global NUMBERS
@@ -60,6 +50,8 @@ def generate(base, digit):
 			if not addition in NUMBERS:
 				NUMBERS.append(addition)
 		else: break
+
+	NUMBERS.sort()
 
 def show_numbers(list):
 	print(' - ', end='')
